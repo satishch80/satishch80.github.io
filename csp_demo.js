@@ -8,9 +8,8 @@ function _readItemFromLocalStorage() {
 
 
 function accessStorage() {
-  const d = new Date();
   console.log ("value from session storage: " + _readItemFromSessionStorage());
   console.log ("value from local storage: " + _readItemFromLocalStorage());
 }
 
-setInterval(accessStorage, 1000);
+setInterval(accessStorage, 5000);
